@@ -1,0 +1,414 @@
+/* ==========================================================================
+   HERO SECTION STYLES (LIGHT NEUMORPHIC COOL CLAY)
+   Sculpted Tactile Hero with Soft UI Physical Depth & Photo Well
+   ========================================================================== */
+
+.neu-hero-section {
+  position: relative;
+  background-color: var(--bg-clay);
+  background-image: 
+    radial-gradient(circle at 10% 15%, rgba(255, 255, 255, 0.75) 0%, transparent 40%),
+    radial-gradient(circle at 90% 85%, rgba(163, 177, 198, 0.25) 0%, transparent 45%);
+  color: var(--text-primary);
+  padding: 7rem 0 5rem 0;
+  overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+  .neu-hero-section {
+    padding: 8.5rem 0 6.5rem 0;
+    min-height: clamp(680px, 92vh, 880px);
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* Background Ambient Highlights */
+.hero-ambient-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(70px);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hero-ambient-orb-1 {
+  width: 400px;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.7);
+  top: -80px;
+  left: -60px;
+}
+
+.hero-ambient-orb-2 {
+  width: 450px;
+  height: 450px;
+  background: rgba(108, 99, 255, 0.1);
+  bottom: -100px;
+  right: -80px;
+}
+
+/* Hero Content Grid */
+.hero-grid {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 4rem;
+  }
+}
+
+/* Left Hero Info */
+.hero-text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Availability Status Pill */
+.hero-status-pill {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
+  padding: 0.45rem 1.15rem;
+  border-radius: var(--radius-full);
+  background: var(--bg-clay);
+  box-shadow: var(--shadow-extruded-small);
+  font-family: var(--font-display);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: 0.04em;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #10B981;
+  box-shadow: 0 0 10px #10B981;
+  animation: neu-pulse 2s infinite ease-in-out;
+}
+
+/* Hero Main Title */
+.hero-title-greeting {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  letter-spacing: -0.01em;
+}
+
+.hero-title-main {
+  font-size: 2.75rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+
+@media (min-width: 768px) {
+  .hero-title-main {
+    font-size: 4rem;
+  }
+}
+
+.hero-title-gradient {
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-role-badge {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--text-muted);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.hero-role-pill {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.hero-description {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--text-muted);
+  max-width: 580px;
+}
+
+/* CTA Group */
+.hero-cta-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.hero-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
+  padding: 0.95rem 2rem;
+  border-radius: var(--radius-btn);
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 100%);
+  color: #FFFFFF !important;
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  box-shadow: 6px 6px 14px rgba(108, 99, 255, 0.4), -6px -6px 14px rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.hero-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 8px 8px 18px rgba(108, 99, 255, 0.55), -8px -8px 18px rgba(255, 255, 255, 0.85);
+}
+
+.hero-btn-primary:active {
+  transform: translateY(1px);
+  box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.3), inset -4px -4px 8px rgba(255, 255, 255, 0.2);
+}
+
+.hero-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
+  padding: 0.95rem 1.85rem;
+  border-radius: var(--radius-btn);
+  background: var(--bg-clay);
+  color: var(--text-primary);
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  box-shadow: var(--shadow-extruded);
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.hero-btn-secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-extruded-hover);
+  color: var(--accent);
+}
+
+.hero-btn-secondary:active {
+  transform: translateY(1px);
+  box-shadow: var(--shadow-inset);
+}
+
+/* Credly Badge Link in Hero */
+.hero-credly-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.55rem 1.15rem;
+  border-radius: var(--radius-full);
+  background: var(--bg-clay);
+  box-shadow: var(--shadow-extruded-small);
+  transition: var(--transition-smooth);
+}
+
+.hero-credly-badge:hover {
+  box-shadow: var(--shadow-extruded);
+  transform: translateY(-1px);
+}
+
+.hero-credly-badge:active {
+  box-shadow: var(--shadow-inset-small);
+  transform: translateY(1px);
+}
+
+.credly-text {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.credly-text span {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+/* Right Side: Dual-Composition Hero Card matching user mockup */
+.hero-visual-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Outer Extruded Neumorphic Card */
+.hero-dual-card {
+  position: relative;
+  width: 100%;
+  max-width: 510px;
+  height: 460px;
+  border-radius: 44px;
+  background: var(--bg-clay);
+  box-shadow: 
+    18px 18px 36px rgba(163, 177, 198, 0.75), 
+    -18px -18px 36px rgba(255, 255, 255, 0.95);
+  padding: 22px;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 1.5rem;
+  box-sizing: border-box;
+  transition: box-shadow var(--transition-physics), transform var(--transition-physics);
+}
+
+.hero-dual-card:hover {
+  box-shadow: 
+    20px 20px 42px rgba(163, 177, 198, 0.8), 
+    -20px -20px 42px rgba(255, 255, 255, 1);
+}
+
+/* Left Pillar: Rounded vertical container for Gio's half-body photo */
+.hero-photo-pillar {
+  flex: 0 0 195px;
+  height: 100%;
+  border-radius: 36px;
+  background: #11141A;
+  box-shadow: 
+    inset 4px 4px 10px rgba(0, 0, 0, 0.45), 
+    inset -2px -2px 6px rgba(255, 255, 255, 0.12);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-pillar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 32% 14%;
+  transform: scale(1.16);
+  transform-origin: 32% 14%;
+  display: block;
+  transition: transform 600ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hero-dual-card:hover .hero-pillar-img {
+  transform: scale(1.20);
+}
+
+/* Right Pane: Clean Credly Badge Overlaid & Rescaled */
+.hero-badge-overlay-pane {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0.25rem;
+}
+
+.hero-badge-overlay-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  animation: badge-gentle-float 4.5s ease-in-out infinite;
+  transition: transform 350ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hero-badge-overlay-img {
+  width: 100%;
+  max-width: 255px;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 12px 24px rgba(163, 177, 198, 0.8)) drop-shadow(0 0 16px rgba(234, 179, 8, 0.2));
+  transition: transform 350ms cubic-bezier(0.16, 1, 0.3, 1), filter 350ms ease;
+}
+
+.hero-badge-overlay-link:hover .hero-badge-overlay-img {
+  transform: scale(1.06) translateY(-4px);
+  filter: drop-shadow(0 18px 32px rgba(163, 177, 198, 0.9)) drop-shadow(0 0 24px rgba(234, 179, 8, 0.45));
+}
+
+@keyframes badge-gentle-float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 960px) {
+  .hero-dual-card {
+    max-width: 450px;
+    height: 390px;
+    border-radius: 38px;
+    padding: 18px;
+    gap: 1rem;
+  }
+  
+  .hero-photo-pillar {
+    flex: 0 0 170px;
+    border-radius: 28px;
+  }
+
+  .hero-badge-overlay-img {
+    max-width: 190px;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-dual-card {
+    max-width: 380px;
+    height: 320px;
+    border-radius: 34px;
+    padding: 14px;
+    gap: 0.85rem;
+  }
+
+  .hero-photo-pillar {
+    flex: 0 0 135px;
+    border-radius: 24px;
+  }
+
+  .hero-badge-overlay-img {
+    max-width: 155px;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero-dual-card {
+    max-width: 310px;
+    height: 280px;
+    border-radius: 28px;
+    padding: 10px;
+    gap: 0.65rem;
+  }
+
+  .hero-photo-pillar {
+    flex: 0 0 115px;
+    border-radius: 20px;
+  }
+
+  .hero-badge-overlay-img {
+    max-width: 130px;
+  }
+}
