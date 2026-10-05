@@ -3,9 +3,7 @@ import {
   Mail, 
   MapPin, 
   Send, 
-  CheckCircle2, 
-  Sparkles,
-  ExternalLink 
+  CheckCircle2
 } from 'lucide-react';
 import { LinkedinIcon, FacebookIcon, InstagramIcon } from './SocialIcons';
 import { personalInfo } from '../data/portfolioData';

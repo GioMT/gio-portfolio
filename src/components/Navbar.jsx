@@ -2,13 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { 
   Home, 
   User, 
-  Cpu, 
+  Layers,
+  Wrench,
   Briefcase, 
   Award, 
-  Mail, 
   Menu, 
   X, 
-  Sparkles,
   ArrowUpRight
 } from 'lucide-react';
 import './Navbar.css';
@@ -33,10 +32,10 @@ export default function Navbar({ activeSection }) {
   const navItems = [
     { id: 'hero', label: 'Home', icon: Home },
     { id: 'intro', label: 'About', icon: User },
-    { id: 'skills', label: 'Tech Stack', icon: Cpu },
+    { id: 'tools', label: 'Tools', icon: Wrench },
+    { id: 'skills', label: 'Skills', icon: Layers },
     { id: 'projects', label: 'Projects', icon: Briefcase },
     { id: 'certifications', label: 'Certifications', icon: Award },
-    { id: 'contact', label: 'Contact', icon: Mail },
   ];
 
   const handleNavClick = (id) => {
@@ -72,7 +71,7 @@ export default function Navbar({ activeSection }) {
                     }}
                     className={`neu-nav-link ${isActive ? 'active' : ''}`}
                   >
-                    <Icon size={15} />
+                    <Icon size={14} />
                     <span>{item.label}</span>
                   </a>
                 </li>

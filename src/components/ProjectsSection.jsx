@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import { 
   Briefcase, 
-  ArrowRight, 
-  ExternalLink, 
-  Eye 
+  ExternalLink,
+  Calendar
 } from 'lucide-react';
 import { GithubIcon } from './SocialIcons';
 import { projects } from '../data/portfolioData';
@@ -59,7 +58,15 @@ export default function ProjectsSection() {
 
                 {/* Project Info */}
                 <div className="project-info-body" style={{ marginTop: '1.25rem' }}>
-                  <div className="project-subtitle">{project.subtitle}</div>
+                  <div className="project-meta-row">
+                    <span className="project-subtitle">{project.subtitle}</span>
+                    {project.year && (
+                      <span className="project-year-pill">
+                        <Calendar size={12} />
+                        <span>{project.year}</span>
+                      </span>
+                    )}
+                  </div>
                   <h3 className="project-title">{project.title}</h3>
                   <p className="project-description">{project.description}</p>
                 </div>
@@ -77,15 +84,6 @@ export default function ProjectsSection() {
 
                 {/* Card Action Controls */}
                 <div className="project-card-actions">
-                  <button 
-                    type="button" 
-                    className="project-btn-details"
-                    onClick={() => setSelectedProject(project)}
-                  >
-                    <span>View Case Study</span>
-                    <ArrowRight size={15} />
-                  </button>
-
                   <div className="project-external-links">
                     {project.githubUrl && (
                       <a 

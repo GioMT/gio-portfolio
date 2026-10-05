@@ -1,184 +1,397 @@
 export const personalInfo = {
-  name: "Giordano Tubeo",
+  name: "Giordano Mariano Tubeo",
   shortName: "Gio",
-  role: "Data Analyst & AI Generative Specialist",
-  tagline: "A data enthusiast crafting intelligent dashboards, generative AI pipelines, and seamless user experiences.",
+  role: "Data Enthusiast",
+  tagline: "A data enthusiast querying raw data into actionable insights, crafting intelligent dashboards, and building generative AI pipelines.",
   email: "giordanotubeo4152@gmail.com",
-  location: "Antipolo City, Philippines",
+  phone: "+639153719253",
+  location: "Antipolo, Rizal, Philippines",
+  portfolioUrl: "https://giomt.netlify.app",
   socials: {
     linkedin: "https://www.linkedin.com/in/giordano-tubeo-182551228/",
     facebook: "https://www.facebook.com/imyohsenzxc",
     instagram: "https://www.instagram.com/imyohsen",
+    github: "https://github.com/giotub",
   },
   credlyBadgeUrl: "https://www.credly.com/badges/8c693224-0a86-4959-90ae-20e57c3b0546",
   heroImage: "/images/gio-hero-portrait.jpg",
 };
 
-export const stats = [
-  { value: "100%", label: "Chat Quality Rating", sub: "Operational Excellence" },
-  { value: "4+", label: "Flagship Systems", sub: "Built & Deployed" },
-  { value: "85%+", label: "Fraud Mitigation", sub: "Risk Anomaly Detection" },
-  { value: "3+", label: "Industry Credentials", sub: "Google & TaskUs" },
+export const workHistory = [
+  {
+    id: "taskus-risk-payments",
+    company: "TaskUs",
+    role: "Risk & Payments Operation Support",
+    period: "Jan 2023 – Present",
+    location: "Antipolo, Rizal · On-site",
+    current: true,
+    summary: "High-volume risk & payments operations handled payment inquiries, transaction pattern investigations, real-time KPI dashboards, and quality training.",
+    achievements: [
+      "Managed a daily average of 50 payment inquiries across multiple channels, maintained a 95% compliance rate for the Initial Response Time SLA of below 90 seconds.",
+      "Mitigated fraud risk by investigating moreover 100 account/transaction patterns daily and enforcing policies that disabled an average of 15% of daily high risk accounts.",
+      "Created and maintained interactive dashboards, providing auto-generated insights for daily, weekly, and monthly team performance metrics, hastening weekly AHT and case concerns report submission rate by 2 days earlier.",
+      "Served as a temporary trainer, developed and led upskill training and conducted Training Needs Analysis which utilized data from quality audits to close 5 skill gaps and reduce weekly quality markdown to 5 and below."
+    ],
+    tags: ["Risk & Fraud", "Payment Operations", "SQL Dashboards", "Learning Experience Upskilling", "Customer Service"]
+  },
+  {
+    id: "harte-hanks-tech-support",
+    company: "Harte Hanks",
+    role: "Technical Support Representative",
+    period: "Apr 2022 – Sep 2022 · 6 mos",
+    location: "Taguig, NCR, Philippines · Hybrid",
+    current: false,
+    summary: "Provided end-to-end technical diagnostics and warranty resolutions for customer hardware and device issues.",
+    achievements: [
+      "Troubleshoot customers' devices over the phone based on the issues they are experiencing and provide in or out-of-warranty options to provide a positive after-sales support experience."
+    ],
+    tags: ["Customer Service", "Technical Support", "Hardware Diagnostics", "Warranty Options", "After-Sales Care"]
+  },
+  {
+    id: "concentrix-csr",
+    company: "Concentrix",
+    role: "Customer Service Representative",
+    period: "Oct 2021 – Jan 2022 · 4 mos",
+    location: "Quezon City, NCR, Philippines · On-site",
+    current: false,
+    summary: "Omnichannel customer support delivering first-contact resolution for product and order management.",
+    achievements: [
+      "Provided a positive experience by assisting customers via phone and chat with inquiries regarding products, orders, returns, and resolving any related issues they may have."
+    ],
+    tags: ["Customer Service", "Phone & Chat", "Order Tracking", "Returns Management", "Issue Resolution"]
+  },
+  {
+    id: "alorica-csr",
+    company: "Alorica",
+    role: "Customer Service Representative",
+    period: "May 2021 – Oct 2021 · 6 mos",
+    location: "Marikina, NCR, Philippines · On-site",
+    current: false,
+    summary: "E-commerce customer care addressing product queries, checkout assistance, and payment processing.",
+    achievements: [
+      "Assisted customers with questions about products, orders, payments and more about our e-commerce product/platform."
+    ],
+    tags: ["Customer Service", "E-commerce Support", "Payment Queries", "Order Inquiries", "Platform Guidance"]
+  },
+  {
+    id: "gicf-contact-center",
+    company: "GICF, Inc.",
+    role: "Contact Center Associate",
+    period: "Nov 2020 – Feb 2021 · 4 mos",
+    location: "Pasig, NCR, Philippines · On-site",
+    current: false,
+    summary: "Digital customer communications and revenue generation across inbound email and live chat.",
+    achievements: [
+      "Handled customers' order inquiries via email and chat. Additionally, upsells an average of five eligible products daily to inbound customers to increase the company's sales revenue."
+    ],
+    tags: ["Customer Service", "Contact Center", "Email & Chat", "Inbound Upselling", "Order Management"]
+  }
 ];
 
 export const skillsCategories = [
-  { id: "all", label: "All Disciplines" },
-  { id: "data", label: "Data & Analytics" },
-  { id: "ai", label: "AI & Generative" },
-  { id: "web", label: "Web Development" },
+  { id: "all", label: "All Skills" },
   { id: "ops", label: "Operations & Risk" },
+  { id: "data", label: "Data & Analytics" },
+  { id: "ai", label: "AI & Automation" },
 ];
 
-export const skills = [
+export const coreSkills = [
   {
-    name: "Customer Operations & QA",
-    category: "ops",
-    desc: "Fintech, E-commerce & Mobile Brand operations with high SLA benchmarks.",
-    level: "100%",
-    tags: ["Quality Assurance", "SLA Management", "Fintech Support", "E-commerce"],
-    icon: "headset",
-  },
-  {
+    id: "risk-fraud",
     name: "Risk & Fraud Investigation",
     category: "ops",
-    desc: "Transaction anomaly detection, mitigation workflows, and fraud prevention.",
-    level: "88%",
-    tags: ["Fraud Investigation", "Risk Mitigation", "Compliance", "Anomaly Detection"],
+    categoryLabel: "Operations & Risk",
+    desc: "Detecting transaction anomalies, investigating suspicious account activity, enforcing policy compliance, and safeguarding financial platforms against fraud exposure.",
+    tags: ["Anomaly Detection", "Policy Enforcement", "Account Security", "Pattern Analysis", "Fraud Mitigation"],
     icon: "shield-alert",
+    highlight: "Proactive fraud mitigation, risk assessment, and policy enforcement"
   },
   {
-    name: "SQL & Relational Databases",
+    id: "data-analysis",
+    name: "Data Analysis & Cleansing",
     category: "data",
-    desc: "Complex data extraction, aggregation, window functions, and query optimization.",
-    level: "90%",
-    tags: ["PostgreSQL", "MySQL", "Query Optimization", "Data Modeling"],
-    icon: "database",
-  },
-  {
-    name: "BI Dashboards & Visualization",
-    category: "data",
-    desc: "Executive KPI monitors, real-time metrics, Tableau, PowerBI, and Google Sheets.",
-    level: "92%",
-    tags: ["PowerBI", "Tableau", "Google Sheets", "AppScript", "Data Viz"],
+    categoryLabel: "Data & Analytics",
+    desc: "Extracting actionable insights from raw data, performing exploratory analysis, data wrangling, cleaning anomalies, and defining meaningful performance metrics.",
+    tags: ["Data Cleansing", "SQL Queries", "KPI Formulation", "Data Wrangling", "Statistical Insights"],
     icon: "bar-chart-3",
+    highlight: "Actionable insights generation, data integrity, and exploratory analysis"
   },
   {
-    name: "Generative AI & Video Pipelines",
+    id: "customer-service",
+    name: "Customer Service",
+    category: "ops",
+    categoryLabel: "Operations & Risk",
+    desc: "Delivering professional omnichannel customer support, resolving complex customer inquiries and disputes, and ensuring high-standard service level agreements (SLAs).",
+    tags: ["Omnichannel Support", "Customer Care", "Dispute Resolution", "Quality Assurance", "SLA Adherence"],
+    icon: "headset",
+    highlight: "Omnichannel customer care, dispute resolution, and SLA adherence"
+  },
+  {
+    id: "operational-analysis",
+    name: "Learning Experience Upskilling",
+    category: "ops",
+    categoryLabel: "Operations & Risk",
+    desc: "Conducting Training Needs Analysis (TNA) through quality evaluations, designing targeted learning modules, and upskilling teams to elevate operational performance.",
+    tags: ["Training Needs Analysis", "Upskill Programs", "Quality Audits", "Continuous Coaching", "Process Optimization"],
+    icon: "trending-up",
+    highlight: "Training Needs Analysis (TNA), curriculum development, and performance coaching"
+  },
+  {
+    id: "ai-generative",
+    name: "AI Generative",
     category: "ai",
-    desc: "State-of-the-art AI video generation, prompt engineering, and synthetic media.",
-    level: "90%",
-    tags: ["Veo 3.1", "Sora", "Nano Banana Pro", "Kling 3.0", "Flow"],
+    categoryLabel: "AI & Automation",
+    desc: "Building multimodal AI workflows, advanced prompt engineering, leveraging large language models (LLMs) for automation, and creating generative media pipelines.",
+    tags: ["Prompt Engineering", "Large Language Models", "Multimodal AI", "Workflow Automation", "Generative Media"],
     icon: "sparkles",
+    highlight: "LLM workflow integration, prompt engineering, and multimodal synthesis"
   },
   {
-    name: "Gemini API & LLM Integrations",
+    id: "bi-dashboards",
+    name: "Interactive BI & Dashboard Architecture",
+    category: "data",
+    categoryLabel: "Data & Analytics",
+    desc: "Architecting intuitive business intelligence dashboards in Power BI and Google Sheets, visualizing KPIs, and automating recurring operational reporting.",
+    tags: ["Power BI", "Google Sheets", "Real-Time Tracking", "Automated Insights", "KPI Dashboards"],
+    icon: "database",
+    highlight: "Automated reporting pipelines, KPI dashboard architecture, and data visualization"
+  }
+];
+
+export const toolsCategories = [
+  { id: "all", label: "All Tools" },
+  { id: "bi", label: "Analytics & BI" },
+  { id: "database", label: "Databases & Code" },
+  { id: "ai", label: "AI & Models" },
+  { id: "productivity", label: "Productivity & Media" }
+];
+
+export const toolsList = [
+  {
+    id: "power-bi",
+    name: "Power BI",
+    category: "bi",
+    categoryLabel: "Business Intelligence",
+    iconType: "powerbi",
+    desc: "Interactive dashboards, DAX calculations, relationship modeling, and executive KPI reports.",
+    tags: ["Interactive Dashboards", "DAX Formulas", "Data Modeling"]
+  },
+  {
+    id: "google-sheets",
+    name: "Google Sheets",
+    category: "bi",
+    categoryLabel: "Spreadsheets & Automation",
+    iconType: "googlesheets",
+    desc: "Complex QUERY functions, ARRAYFORMULA, real-time KPI trackers, and AppScript automation.",
+    tags: ["Complex Formulas", "Real-Time Tracking", "Automation"]
+  },
+  {
+    id: "excel",
+    name: "Microsoft Excel",
+    category: "bi",
+    categoryLabel: "Spreadsheets & Auditing",
+    iconType: "excel",
+    desc: "Pivot tables, XLOOKUP, advanced formulas, financial modeling, and operational QA audit tracking.",
+    tags: ["Pivot Tables", "XLOOKUP", "Auditing Spreadsheets"]
+  },
+  {
+    id: "sql",
+    name: "SQL",
+    category: "database",
+    categoryLabel: "Relational Querying",
+    iconType: "sql",
+    desc: "Querying raw databases into actionable insights, complex JOINs, CTEs, subqueries, and window functions.",
+    tags: ["Expert Queries", "Window Functions", "CTEs", "Aggregation"]
+  },
+  {
+    id: "python",
+    name: "Python",
+    category: "database",
+    categoryLabel: "Programming & Data",
+    iconType: "python",
+    desc: "Data cleansing scripts, automation routines, API consumption, and analytical workflows.",
+    tags: ["Data Manipulation", "Scripting", "API Integrations"]
+  },
+  {
+    id: "antigravity",
+    name: "Antigravity IDE",
+    category: "database",
+    categoryLabel: "Agentic AI Development",
+    iconType: "antigravity",
+    desc: "Autonomous agentic coding, workspace orchestration, browser testing, and AI-accelerated system development.",
+    tags: ["Agentic IDE", "System Automation", "Fullstack Development"]
+  },
+  {
+    id: "chatgpt",
+    name: "ChatGPT",
     category: "ai",
-    desc: "Multimodal AI prompt crafting, automated categorization, and intelligent copilot workflows.",
-    level: "85%",
-    tags: ["Gemini API", "Prompt Engineering", "NLP", "Task Automation"],
-    icon: "cpu",
+    categoryLabel: "Conversational AI & Analysis",
+    iconType: "chatgpt",
+    desc: "Advanced prompting, workflow automation, analytical brainstorming, and automated report synthesis.",
+    tags: ["OpenAI", "Prompt Engineering", "Analysis"]
   },
   {
-    name: "Modern Fullstack UI (Next.js & React)",
-    category: "web",
-    desc: "Responsive web apps, modular component architectures, and intuitive user experiences.",
-    level: "86%",
-    tags: ["Next.js", "React", "JavaScript", "Tailwind CSS", "Vanilla CSS"],
-    icon: "code-2",
+    id: "claude",
+    name: "Claude",
+    category: "ai",
+    categoryLabel: "Advanced Reasoning & LLM",
+    iconType: "claude",
+    desc: "Complex document analysis, nuanced data reasoning, synthetic report structuring, and code synthesis.",
+    tags: ["Anthropic", "Complex Reasoning", "Data Synthesis"]
   },
   {
-    name: "Backend & Cloud Services (Supabase)",
-    category: "web",
-    desc: "Database schema design, authentication, serverless functions, and real-time APIs.",
-    level: "82%",
-    tags: ["Supabase", "REST APIs", "Auth", "Cloud Database"],
-    icon: "server",
+    id: "gemini",
+    name: "Google Gemini",
+    category: "ai",
+    categoryLabel: "Multimodal AI & Search",
+    iconType: "gemini",
+    desc: "Multimodal analytics, cross-referencing information, large context synthesis, and automated data drafting.",
+    tags: ["Multimodal AI", "Google AI", "Context Analysis"]
   },
+  {
+    id: "veo",
+    name: "Google Flow",
+    category: "ai",
+    categoryLabel: "Generative AI Video",
+    iconType: "veo",
+    desc: "Cutting-edge cinematic AI video synthesis, advanced motion directing, and multimodal prompting.",
+    tags: ["Veo 3.1", "Cinematic Prompting", "Motion Control"]
+  },
+  {
+    id: "github",
+    name: "GitHub",
+    category: "database",
+    categoryLabel: "Version Control & CI/CD",
+    iconType: "github",
+    desc: "Source code repositories, version control branching, collaborative code review, and automated deployments.",
+    tags: ["Version Control", "Git Repositories", "Collaboration"]
+  },
+  {
+    id: "google-workspace",
+    name: "Google Suite",
+    category: "productivity",
+    categoryLabel: "Cloud Collaboration",
+    iconType: "googleworkspace",
+    desc: "Integrated enterprise collaboration across Docs, Drive, Slides, Forms, and automated operational pipelines.",
+    tags: ["Docs & Slides", "Drive Pipelines", "Forms Workflow"]
+  },
+  {
+    id: "netlify",
+    name: "Netlify",
+    category: "productivity",
+    categoryLabel: "Cloud Platform",
+    iconType: "netlify",
+    desc: "Production web platform deployment, SSL security, continuous build pipelines, and custom DNS hosting.",
+    tags: ["Web Hosting", "Continuous Deploy", "DNS Management"]
+  },
+  {
+    id: "slack",
+    name: "Slack",
+    category: "productivity",
+    categoryLabel: "Team Collaboration & Ops",
+    iconType: "slack",
+    desc: "Operational incident channels, asynchronous team collaboration, webhook alerts, and workflow automation.",
+    tags: ["Team Messaging", "Incident Ops", "Workflow Automation"]
+  },
+  {
+    id: "discord",
+    name: "Discord",
+    category: "productivity",
+    categoryLabel: "Community & Real-Time Comms",
+    iconType: "discord",
+    desc: "Community coordination, bot integration, developer discussions, and real-time voice & channel communications.",
+    tags: ["Real-Time Comms", "Community Ops", "Bot Integrations"]
+  },
+  {
+    id: "capcut",
+    name: "CapCut",
+    category: "productivity",
+    categoryLabel: "Media & Post-Production",
+    iconType: "capcut",
+    desc: "Video editing, motion graphics, pacing, audio sync, and digital content delivery.",
+    tags: ["Video Editing", "Content Pacing", "Audio Sync"]
+  }
 ];
 
 export const projects = [
   {
-    id: "vyse-financial",
-    title: "Vyse Financial Tracker",
-    subtitle: "Modern Personal Finance Dashboard with AI Insights",
-    category: "web",
-    categoryLabel: "Fullstack & AI",
-    image: "/images/project-vyse.jpg",
-    tags: ["Next.js", "Supabase", "Tailwind CSS", "Gemini API"],
-    description: "A modern personal finance dashboard featuring real-time transaction tracking, recurring bill management, loan amortization tracking, and automated AI-powered transaction categorization using the Gemini API.",
+    id: "chat-tracker-report",
+    title: "Chat Tracker & Report Dashboard",
+    subtitle: "Real-Time Quality & KPI Operation Monitor",
+    year: "2024",
+    category: "data",
+    categoryLabel: "Data Systems",
+    image: "/images/project-chat-ops.jpg",
+    tags: ["SQL", "Google Sheets", "Data Cleansing", "Visualization", "AppScript"],
+    description: "Initiated and developed a chat reporting solution by writing complex spreadsheet functions and SQL queries, building a real-time visualization dashboard adopted by the entire operation to track key performance indicators, resulting in a 2-day reduction in weekly report submission time.",
     highlights: [
-      "Real-time transaction & bank sync tracking with categorized expenditures",
-      "Dynamic loan amortization calculator and recurring bill forecast",
-      "Integrated Gemini API for automatic smart categorization and spending insights",
-      "Supabase backend for secure authentication and real-time database queries"
+      "Adopted by the entire operation to track team and agent key performance indicators",
+      "Resulted in a 2-day reduction in weekly report submission turnaround time",
+      "Complex SQL querying pipeline extracting raw chat volumes and agent handling metrics",
+      "Real-time visualization dashboard and auto-generated insights in Google Sheets"
     ],
-    liveUrl: "https://vyse-financial.vercel.app",
-    githubUrl: "https://github.com/giotub/personal-finance-tracker",
+    liveUrl: "https://giomt.netlify.app",
+    githubUrl: "https://github.com/giotub",
   },
   {
-    id: "sanctropic-resort",
-    title: "Sanctropic Resort Management System",
-    subtitle: "Scalable Multi-Tenant Booking & Hospitality Ecosystem",
+    id: "portfolio-website",
+    title: "Portfolio Website",
+    subtitle: "Modern Neumorphic Web Application",
+    year: "2026",
     category: "web",
     categoryLabel: "Web Platform",
-    image: "/images/project-sanctropic.jpg",
-    tags: ["JavaScript", "System Architecture", "Stripe API", "Booking Engine"],
-    description: "A comprehensive hospitality management ecosystem featuring real-time multi-tenant reservations, interactive villa calendar, integrated payment processing, and an administrative dashboard for operational resort control.",
+    image: "/images/project-vyse.jpg",
+    tags: ["React", "Vite", "JavaScript", "HTML5", "CSS3 Neumorphism", "Antigravity IDE", "GitHub", "Netlify"],
+    description: "Created and deployed a personal portfolio website at giomt.netlify.app as a central platform to showcase completed data analysis, AI generated contents, and web development projects.",
     highlights: [
-      "Interactive villa availability calendar with real-time slot locking",
-      "Integrated secure payment processing pipeline via Stripe API",
-      "Role-based administrative portal for front-desk, housekeeping, and management",
-      "Occupancy analytics, Average Daily Rate (ADR) tracking, and revenue forecasting"
+      "Custom tactile neumorphic UI design engineered from physical depth principles",
+      "Interactive data filtering, project lightbox modals, and verified credential previews",
+      "Continuous deployment pipeline via GitHub repository to Netlify cloud hosting",
+      "Responsive across all screen sizes with fluid typography and micro-animations"
     ],
-    liveUrl: "#",
+    liveUrl: "https://giomt.netlify.app",
     githubUrl: "https://github.com/giotub",
   },
   {
     id: "ai-ugc-marketing",
-    title: "AI User Generated Content (UGC) Pipeline",
-    subtitle: "Next-Gen Generative Video Production for Ad Campaigns",
+    title: "AI UGC Ads",
+    subtitle: "Generative Video Production for Ad Campaigns",
+    year: "2026",
     category: "ai",
     categoryLabel: "Generative AI",
     image: "/images/project-ugc.jpg",
-    tags: ["Veo 3.1", "Flow", "AI Generative", "Sora", "Nano Banana Pro"],
+    tags: ["Veo 3.1", "Flow", "AI Generative", "Omni 1.1", "Nano Banana Pro", "CapCut"],
     description: "High-converting AI-powered User-Generated Content (UGC) production workflow for digital marketing, designed for high-performance ad campaigns, product showcases, and viral social media storytelling.",
     highlights: [
-      "Automated prompt-to-video workflow leveraging Veo 3.1 and Sora models",
+      "Automated prompt-to-video workflow leveraging Veo 3.1 and Omni 1.1 models",
       "Hyper-realistic synthetic actor generation tailored for e-commerce brands",
       "A/B creative testing pipeline generating multi-hook variations in minutes",
-      "High ROAS performance metrics across social video advertising channels"
+      "Post-production polishing with CapCut and audio synchronization"
     ],
     liveUrl: "#",
     githubUrl: "https://github.com/giotub",
-  },
-  {
-    id: "chat-ops-tracker",
-    title: "Chat Operation's Tracker & QA Dashboard",
-    subtitle: "Real-Time Quality & Case Escalation Monitor",
-    category: "data",
-    categoryLabel: "Data Systems",
-    image: "/images/project-chat-ops.jpg",
-    tags: ["Google Sheets", "SQL", "Data Viz", "AppScript Automation"],
-    description: "An operational tracking suite featuring real-time chat quality scoring, case escalation alerts, agent SLA monitoring, and automated sync between Google Sheets and analytical SQL pipelines.",
-    highlights: [
-      "Automated chat quality assurance scoring algorithm with real-time feedback",
-      "SQL query pipeline analyzing agent response time, volume spikes, and churn risk",
-      "Custom Google AppScript triggers for automatic daily reporting to leadership",
-      "Interactive resolution heatmap pinpointing peak escalation hours"
-    ],
-    liveUrl: "#",
-    githubUrl: "https://github.com/giotub",
-  },
+  }
 ];
 
 export const certifications = [
+  {
+    id: "gda",
+    title: "Google Data Analytics Professional Certificate",
+    issuer: "Google (Coursera)",
+    year: "2024",
+    credentialId: "GDA-COURS-839210",
+    verifyUrl: "https://coursera.org/verify/placeholder-google-data-analytics",
+    image: "/images/cert-data-science.jpg",
+    skills: ["Data Cleansing & Visualization", "SQL", "Python", "R", "Google Suite", "BigQuery & Tableau"],
+    featured: true,
+  },
   {
     id: "gae",
     title: "Google AI Essentials",
     issuer: "Google (Coursera)",
     year: "2026",
     credentialId: "G3WKKXM0UMJD",
-    link: "https://www.credly.com/badges/8c693224-0a86-4959-90ae-20e57c3b0546/public_url",
+    verifyUrl: "https://coursera.org/verify/specialization/G3WKKXM0UMJD",
     badgeImg: "/images/credly-google-ai-badge.png",
     image: "/images/cert-google-ai.png",
     skills: ["Generative AI", "Prompt Engineering", "AI Productivity", "Responsible AI"],
@@ -190,9 +403,9 @@ export const certifications = [
     issuer: "TaskUs (Academy)",
     year: "2025",
     credentialId: "ContinuousSelfImprovement-TaskUs",
-    link: "https://giomt.netlify.app",
+    verifyUrl: "https://giomt.netlify.app#certifications",
     image: "/images/cert-data-science.jpg",
-    skills: ["Data Analysis", "SQL", "Statistical Modeling", "Business Intelligence"],
+    skills: ["Data Cleansing", "Analysis & Visualization", "Google Suite", "SQL", "R & PowerBI"],
     featured: false,
   },
   {
@@ -201,7 +414,7 @@ export const certifications = [
     issuer: "Google (Coursera)",
     year: "2022",
     credentialId: "6SMGPF4J6S69",
-    link: "https://coursera.org/verify/6SMGPF4J6S69",
+    verifyUrl: "https://coursera.org/verify/6SMGPF4J6S69",
     image: "/images/cert-tech-support.jpg",
     skills: ["Systems Support", "Troubleshooting", "Networking", "Operating Systems"],
     featured: false,

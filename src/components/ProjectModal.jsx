@@ -1,10 +1,8 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { 
   X, 
   ExternalLink, 
-  CheckCircle2, 
-  Layers, 
-  Sparkles 
+  CheckCircle2
 } from 'lucide-react';
 import { GithubIcon } from './SocialIcons';
 import './ProjectModal.css';

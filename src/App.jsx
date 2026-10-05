@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import IntroSection from './components/IntroSection';
-import TechStackSection from './components/TechStackSection';
+import SkillsSection from './components/SkillsSection';
+import ToolsSection from './components/ToolsSection';
 import ProjectsSection from './components/ProjectsSection';
 import CertificationsSection from './components/CertificationsSection';
 import ContactSection from './components/ContactSection';
@@ -12,7 +13,7 @@ export default function App() {
   const [activeSection, setActiveSection] = useState('hero');
 
   useEffect(() => {
-    const sections = ['hero', 'intro', 'skills', 'projects', 'certifications', 'contact'];
+    const sections = ['hero', 'intro', 'tools', 'skills', 'projects', 'certifications', 'contact'];
 
     const handleScroll = () => {
       const scrollPosition = window.scrollY + 200;
@@ -43,22 +44,25 @@ export default function App() {
 
       {/* Main Sections */}
       <main>
-        {/* 1. Hero Section (Light Neumorphic Cool Clay) */}
+        {/* 1. Hero Section (Light Neumorphic Cool Clay with Floating AI Essentials Badge) */}
         <HeroSection />
 
-        {/* 2. Introduction Section (Cool Grey Soft UI) */}
+        {/* 2. Introduction & Work History Frame */}
         <IntroSection />
 
-        {/* 3. Tools / Tech Stack Section */}
-        <TechStackSection />
+        {/* 3. Technical Toolbelt / Tools & Platforms (with Official App Brand Icons) */}
+        <ToolsSection />
 
-        {/* 4. Featured Projects Section */}
+        {/* 4. Core Competencies & Skills (No Percentages) */}
+        <SkillsSection />
+
+        {/* 5. Featured Projects Section */}
         <ProjectsSection />
 
-        {/* 5. Certifications Section */}
+        {/* 6. Certifications Section (In-Page Modal Preview & Verification Link) */}
         <CertificationsSection />
 
-        {/* 6. Contact Section */}
+        {/* 7. Contact Section */}
         <ContactSection />
       </main>
 
