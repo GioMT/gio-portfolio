@@ -321,16 +321,16 @@ export const projects = [
     year: "2024",
     category: "data",
     categoryLabel: "Data Systems",
-    image: "/images/project-chat-ops.jpg",
+    image: "/images/project-chat-ops.png",
     tags: ["SQL", "Google Sheets", "Data Cleansing", "Visualization", "AppScript"],
-    description: "Initiated and developed a chat reporting solution by writing complex spreadsheet functions and SQL queries, building a real-time visualization dashboard adopted by the entire operation to track key performance indicators, resulting in a 2-day reduction in weekly report submission time.",
+    description: "Designed and built an end-to-end customer support operations reporting suite. The system aggregates over 100,000 chat interaction logs and QA audits across an enterprise roster into an interactive dashboard. Operations managers and team leads can dynamically filter by date range, supervisor, and agent to evaluate Average Handle Time (AHT), top customer concern drivers, and Quality Audit accuracy percentages.",
     highlights: [
       "Adopted by the entire operation to track team and agent key performance indicators",
       "Resulted in a 2-day reduction in weekly report submission turnaround time",
       "Complex SQL querying pipeline extracting raw chat volumes and agent handling metrics",
       "Real-time visualization dashboard and auto-generated insights in Google Sheets"
     ],
-    liveUrl: "https://giomt.netlify.app",
+    liveUrl: "https://docs.google.com/spreadsheets/d/1AAO0L5ITeEBGnVhH3FF9VcSkHttNwM7hqlwhYnov2No/edit?usp=sharing",
     githubUrl: "https://github.com/giotub",
   },
   {
