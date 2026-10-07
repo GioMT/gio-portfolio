@@ -44,7 +44,7 @@ export default function IntroSection() {
 
               <div className="intro-paragraphs">
                 <p>
-                  Google Certified Data Analyst with <strong>3+ years of experience</strong> in high-volume <strong>Risk and Payments Operations</strong> based in <strong>Antipolo, Rizal</strong>.
+                  Google Certified Data Analyst with <strong>3+ years of experience</strong> in high-volume <strong>Risk and Payments Operations</strong>.
                 </p>
                 <p>
                   Expert in <strong>SQL</strong>, <strong>spreadsheets</strong>, and successfully using data to drive operational efficiency by querying raw data into actionable insights, coherent data visualization and reporting.
@@ -56,15 +56,27 @@ export default function IntroSection() {
 
               {/* Quick Meta Chips */}
               <div className="intro-meta-chips">
+
                 <span className="intro-meta-chip">
-                  <MapPin size={13} />
-                  <span>Antipolo, Rizal</span>
+                  <span>Communicative</span>
                 </span>
                 <span className="intro-meta-chip">
-                  <span>3+ Years Operations</span>
+                  <span>Detail-oriented</span>
                 </span>
                 <span className="intro-meta-chip">
-                  <span>Google Certified</span>
+                  <span>Analytical</span>
+                </span>
+                <span className="intro-meta-chip">
+                  <span>Resourceful</span>
+                </span>
+                <span className="intro-meta-chip">
+                  <span>Collaborative</span>
+                </span>
+                <span className="intro-meta-chip">
+                  <span>Adaptive</span>
+                </span>
+                <span className="intro-meta-chip">
+                  <span>Proactive</span>
                 </span>
               </div>
             </div>

@@ -52,7 +52,7 @@ export default function Navbar({ activeSection }) {
         {/* Brand Logo */}
         <a href="#hero" className="neu-logo" onClick={(e) => { e.preventDefault(); handleNavClick('hero'); }}>
           <div className="neu-logo-badge">G</div>
-          <div className="neu-logo-text">GIO<span>.DEV</span></div>
+          <div className="neu-logo-text">Gio<span>MT</span></div>
         </a>
 
         {/* Desktop Links */}

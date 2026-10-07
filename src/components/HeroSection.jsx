@@ -27,7 +27,7 @@ export default function HeroSection() {
             {/* Status Pill */}
             <div className="hero-status-pill">
               <span className="status-dot"></span>
-              <span>OPEN FOR DATA ANALYSIS ROLES</span>
+              <span>OPEN FOR REMOTE DATA ANALYSIS ROLES</span>
             </div>
 
             {/* Main Greeting & Title */}
@@ -49,7 +49,7 @@ export default function HeroSection() {
 
             {/* Description */}
             <p className="hero-description">
-              Google Certified Data Analyst with 3+ years in high-volume Risk and Payments Operations. Expert in querying raw data into actionable insights, building interactive dashboards, and designing next-generation generative AI workflows.
+              Google Certified Data Analyst with 3+ years in high-volume Risk and Payments Operations. Expert in querying raw data into actionable insights and building interactive dashboards with next-generation generative AI augmented workflows.
             </p>
 
             {/* CTAs */}
@@ -99,7 +99,7 @@ export default function HeroSection() {
                 <div className="hero-photo-inner">
                   <img
                     src={personalInfo.heroImage}
-                    alt="Giordano Gio Tubeo - Data Analyst and AI Generative Specialist"
+                    alt="Giordano Gio Tubeo - Data Analyst, Customer Service and Risk Fraud "
                     className="hero-portrait-img"
                     onError={(e) => {
                       e.target.onerror = null;
@@ -112,7 +112,7 @@ export default function HeroSection() {
                 {/* Photo card bottom info pill */}
                 <div className="hero-card-footer-pill">
                   <span className="pulse-indicator"></span>
-                  <span>Antipolo, Rizal • Risk & Data Operations</span>
+                  <span>Antipolo, Rizal, Philippines 1930</span>
                 </div>
 
                 {/* Floating Google AI Essentials Badge - Overlapping the corner edge in the middle part of the badge */}
